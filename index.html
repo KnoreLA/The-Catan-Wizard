@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Catan Wizard - Learn the Setup, Rules, and Strategies of Catan</title>
+    <!-- Google Fonts for Catan Aesthetic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesv3.css">
+</head>
+
+<body>
+
+    <!-- HEADER & NAVIGATION -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="hex-logo"></span>
+                THE CATAN <span class="accent-text">WIZARD</span>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#setup">Board Setup</a></li>
+                    <li><a href="#rules">Basic Rules</a></li>
+                    <li><a href="#strategies">Pro Strategies</a></li>
+                    <li><a href="#pro-tactics">Tournament Tactics</a></li>
+                    <li><a href="#stats">Dice & Card Stats</a></li>
+                    <li><a href="#tutorial">Video Guide</a></li>
+                    <li><a href="#resources">Links</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <div class="badge">Master Board Game Guide</div>
+                <h1>The Catan Wizard</h1>
+                <p>Learn board setup, initial settlement snake-drafting, core turn mechanics, dice probability statistics, and tournament-level strategic tricks.</p>
+                <div class="hero-buttons">
+                    <a href="#setup" class="btn btn-primary">How to Set Up</a>
+                    <a href="#rules" class="btn btn-secondary">Quick Start Rules</a>
+                    <a href="#pro-tactics" class="btn btn-gold">Pro Tactics</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESOURCE HEX HIGHLIGHT BAR -->
+    <section class="hex-bar">
+        <div class="container hex-flex">
+            <div class="hex-item brick">
+                <div class="hex-shape"><span>🧱</span></div>
+                <p>Brick (Hills)</p>
+            </div>
+            <div class="hex-item wood">
+                <div class="hex-shape"><span>🌲</span></div>
+                <p>Lumber (Forest)</p>
+            </div>
+            <div class="hex-item wool">
+                <div class="hex-shape"><span>🐑</span></div>
+                <p>Wool (Pasture)</p>
+            </div>
+            <div class="hex-item wheat">
+                <div class="hex-shape"><span>🌾</span></div>
+                <p>Grain (Fields)</p>
+            </div>
+            <div class="hex-item ore">
+                <div class="hex-shape"><span>⛰️</span></div>
+                <p>Ore (Mountains)</p>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+
+        <!-- SECTION 1: GAME SETUP GUIDE -->
+        <section id="setup" class="content-card">
+            <div class="section-header">
+                <h2>🧩 Set Up</h2>
+                <p>Step-by-step instructions for assembling the island before starting.</p>
+            </div>
+
+            <div class="media-row">
+                <div class="media-text">
+                    <div class="setup-step">
+                        <h3>1. Assemble the Ocean Frame</h3>
+                        <p>Connect the 6 sea frame pieces together around your table. Ensure the harbors face inward toward the island space.</p>
+                    </div>
+
+                    <div class="setup-step">
+                        <h3>2. Shuffle & Place Terrain Tiles</h3>
+                        <p>Shuffle the 19 hex tiles face up and randomly place them inside the sea frame in concentric rings until filled:</p>
+                        <ul>
+                            <li><strong>4 Forest tiles</strong> (Lumber)</li>
+                            <li><strong>4 Pasture tiles</strong> (Wool)</li>
+                            <li><strong>4 Field tiles</strong> (Grain)</li>
+                            <li><strong>3 Hill tiles</strong> (Brick)</li>
+                            <li><strong>3 Mountain tiles</strong> (Ore)</li>
+                            <li><strong>1 Desert tile</strong> (Produces nothing; starts with the Robber)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="media-img-box">
+                    <img src="catan-board-game-gameplay.jpg.webp" alt="Catan Modular Hexagon Board" class="responsive-img img-styled">
+                    <span class="img-caption">Modular hex board constructed inside the sea frame.</span>
+                </div>
+            </div>
+
+            <!-- THREE WAYS TO PLACE NUMBERS -->
+            <div class="setup-methods">
+                <h3>3. Place the Number Tokens (3 Standard Methods)</h3>
+                <div class="methods-grid">
+                    <div class="method-card">
+                        <div class="method-badge">Standard / Beginners</div>
+                        <h4>A-Z Spiral Rule</h4>
+                        <p>Place number tokens letter-side up starting at a corner of the frame. Follow a spiral inwards toward the desert, skipping the Desert tile. Flip tokens over to reveal numbers. This guarantees red numbers (6 & 8) never touch!</p>
+                    </div>
+
+                    <div class="method-card">
+                        <div class="method-badge">Variable Board</div>
+                        <h4>Full Random Setup</h4>
+                        <p>Shuffle all 18 number tokens face-down and place one on every terrain tile (skip desert). Flip tokens over. <strong>Tournament Rule:</strong> If red numbers (6 or 8) sit adjacent to each other, swap one red token with a neighboring non-red token.</p>
+                    </div>
+
+                    <div class="method-card">
+                        <div class="method-badge">Competitive / Balanced</div>
+                        <h4>Balanced Custom Draft</h4>
+                        <p>Players adjust token locations to prevent any single intersection from holding unfair production value (e.g. no triple-6/8 intersections or single resource monopolization during placement phase).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: QUICK & EASY RULES -->
+        <section id="rules" class="content-card">
+            <div class="section-header">
+                <h2>⚡ Quick & Easy Rules Guide</h2>
+                <p>Everything you need to know about the game, placements, and actions.</p>
+            </div>
+
+            <!-- GAME PROGRESSION & INITIAL PLACEMENT -->
+            <div class="rules-flow-box mb-2">
+                <h3>🔄 How a Game of Catan Proceeds</h3>
+
+                <div class="flow-steps">
+                    <div class="flow-step">
+                        <div class="step-num">Step 1</div>
+                        <h4>Initial Placement Phase (Snake Draft)</h4>
+                        <p>High die roll picks color and goes first:</p>
+                        <ul>
+                            <li><strong>First Settlement:</strong> Player 1 places 1 settlement + 1 attached road. Order proceeds <em>clockwise</em> (Player 1 → 2 → 3 → 4).</li>
+                            <li><strong>Second Settlement:</strong> Player 4 then places their 2nd settlement + road, and order proceeds <em>counter-clockwise</em> (Player 4 → 3 → 2 → 1).</li>
+                        </ul>
+                    </div>
+
+                    <div class="flow-step">
+                        <div class="step-num">Step 2</div>
+                        <h4>Starting Resources Yield</h4>
+                        <p>You do <strong>not</strong> collect resources for your first settlement. Each player receives <strong>1 resource card</strong> for every hex adjacent to their <strong>second settlement</strong> only!</p>
+                    </div>
+
+                    <div class="flow-step">
+                        <div class="step-num">Step 3</div>
+                        <h4>Standard Turn Rotation</h4>
+                        <p>Turns move clockwise. On your turn, you: <strong>1. Roll dice</strong> (produces resources for everyone), <strong>2. Trade</strong> with players or bank, and <strong>3. Build</strong> roads, settlements, cities, or dev cards.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="media-row reverse">
+                <div class="media-text">
+                    <div class="rules-grid">
+                        <div class="rule-box">
+                            <div class="rule-icon">🎯</div>
+                            <h3>1. Objective & Point Values</h3>
+                            <ul>
+                                <li>Be the first player to reach <strong>10 Victory Points (VPs)</strong> on your turn.</li>
+                                <li><strong>Settlement:</strong> 1 VP each.</li>
+                                <li><strong>City:</strong> 2 VPs each (upgrades a settlement).</li>
+                                <li><strong>Longest Road (5+ connected):</strong> 2 VPs.</li>
+                                <li><strong>Largest Army (3+ Knights):</strong> 2 VPs.</li>
+                                <li><strong>VP Dev Cards:</strong> 1 VP each (kept hidden).</li>
+                            </ul>
+                        </div>
+
+                        <div class="rule-box">
+                            <div class="rule-icon">🛠️</div>
+                            <h3>2. Building Costs Reference</h3>
+                            <ul>
+                                <li><strong>Road:</strong> 1 Lumber + 1 Brick</li>
+                                <li><strong>Settlement:</strong> 1 Lumber + 1 Brick + 1 Wool + 1 Grain</li>
+                                <li><strong>City:</strong> 2 Grain + 3 Ore <em>(Replaces a Settlement)</em></li>
+                                <li><strong>Development Card:</strong> 1 Wool + 1 Grain + 1 Ore</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="media-img-box">
+                    <img src="CATAN_Board_3DRender.jpg" alt="Pair of rolling dice on board game" class="responsive-img img-styled">
+                    <span class="img-caption">Dice rolls drive resource production on every single turn.</span>
+                </div>
+            </div>
+
+            <div class="rules-grid mt-1">
+                <!-- Distance Rule -->
+                <div class="rule-box">
+                    <div class="rule-icon">📍</div>
+                    <h3>3. Settlement Placement Rules</h3>
+                    <ul>
+                        <li><strong>Distance Rule:</strong> A settlement can only be placed at an open intersection if all 3 adjacent intersections are empty (must be at least 2 road lengths apart from any existing settlement).</li>
+                        <li><strong>Road Network:</strong> All new settlements built after setup must connect to your own existing road network.</li>
+                    </ul>
+                </div>
+
+                <!-- Robber Rules -->
+                <div class="rule-box">
+                    <div class="rule-icon">🏴‍☠️</div>
+                    <h3>4. Rolling a 7 & The Robber</h3>
+                    <ul>
+                        <li><strong>No Resources Produced:</strong> Rolling a 7 produces no resources for anyone.</li>
+                        <li><strong>7+ Card Penalty:</strong> Anyone with <strong>8 or more cards</strong> must discard half (rounded down).</li>
+                        <li><strong>Move Robber & Steal:</strong> Active player moves the Robber to any hex & steals 1 random card from a player with an adjacent settlement.</li>
+                        <li><strong>🚫 Hex Blockade:</strong> While the Robber rests on a hex, <strong>no player collects resources from that hex</strong> when its number is rolled!</li>
+                    </ul>
+                </div>
+
+                <div class="rule-box">
+                    <div class="rule-icon">☠️</div>
+                    <h3>5. Winning the Game</h3>
+                    <ul>
+                        <li><strong>First Player to 10:</strong> Including hidden victory points, the first player to ten wins!</li>
+                        <li><strong>Largest Army:</strong> The first player to play three knight cards, claims Largest Army. A player who suceeds the current amount takes Largest Army.</li>
+                        <li><strong>Longest Road:</strong> The first player to have five placed, consecutive roads claims Longest Road. A player who suceeds the current amount takes Longest Road.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: PRO STRATEGIES -->
+        <section id="strategies" class="content-card">
+            <div class="section-header">
+                <h2>🧠 Professional Catan Strategies</h2>
+                <p>Master these core strategy archetypes used in high-level play.</p>
+            </div>
+
+            <div class="strategy-cards">
+                <div class="strat-card">
+                    <div class="strat-tag tag-ore">Aggressive Build</div>
+                    <h3>OWS Strategy (Ore / Wheat / Sheep)</h3>
+                    <p>Focus initial placements heavily on high-pip Ore, Grain, and Wool tiles. Skip early road building and quickly upgrade to <strong>Cities</strong> while buying continuous <strong>Development Cards</strong> for Army points and hidden VPs.</p>
+                </div>
+
+                <div class="strat-card">
+                    <div class="strat-tag tag-wood">Expansion Build</div>
+                    <h3>Road Rush & Port Control</h3>
+                    <p>Secure dominant Lumber and Brick numbers early. Lock down crucial expansion spots fast, claim the <strong>Longest Road</strong>, and settle on 2:1 specialized ports to trade excess wood/brick for Ore and Grain late game.</p>
+                </div>
+
+                <div class="strat-card">
+                    <div class="strat-tag tag-gold">Balanced Setup</div>
+                    <h3>The Rainbow Setup</h3>
+                    <p>Ensure starting settlements give access to all 5 resources. Provides high adaptability to trade board offers and prevents getting bottlenecked by missing a critical resource type.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: TOURNAMENT RULES & PRO TACTICS -->
+        <section id="pro-tactics" class="content-card highlight-card">
+            <div class="section-header">
+                <h2>⚡ Tournament Rules & Pro Meta Tactics</h2>
+                <p>Exploit high-level tricks, unspoken table etiquette, and legal loopholes that pros leverage.</p>
+            </div>
+
+            <div class="media-row">
+                <div class="media-img-box">
+                    <img src="0*lu6QCHVq8V03_3P7.jpg" alt="Strategy cards and table play" class="responsive-img img-styled">
+                    <span class="img-caption">Development card timing and table negotiations separate pros from beginners.</span>
+                </div>
+                <div class="media-text">
+                    <div class="tactic-item">
+                        <div class="tactic-title">1. Development Card Pre-Roll Timing</div>
+                        <p><strong>Rule:</strong> You can play 1 Development Card on your turn <em>before rolling the dice</em>! Pros play Knight cards prior to rolling to move the Robber off their high-pip hex (or onto a leader) before resource generation triggers.</p>
+                    </div>
+
+                    <div class="tactic-item">
+                        <div class="tactic-title">2. The Infamous "Dirty Monopoly" Trick</div>
+                        <p><strong>Tactical Combo:</strong> Trade away all of a specific resource (e.g. 5 Brick) to opponents in exchange for resources you need. Immediately after trading, play a <strong>Monopoly Card</strong> naming Brick! You instantly get all your traded cards back plus any extra brick they previously held.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tactics-grid mt-1">
+                <div class="tactic-box">
+                    <h4>🤝 Non-Block / Non-Steal Deals (Robber Diplomacy)</h4>
+                    <p>When rolling a 7 or playing a Knight, propose non-aggression pacts: <em>"If I place the robber on Player B, will you trade me a Wheat next turn?"</em> Or negotiate immunity: <em>"I won't steal from you if you agree not to block my 6 Ore when you roll a 7."</em></p>
+                </div>
+
+                <div class="tactic-box">
+                    <h4>🧮 Hand Counting & 7-Discard Dodge</h4>
+                    <p>Track opponent hand counts! If you sit on 7 cards at the end of your turn, buy a Development Card or build a road to stay at 7 or fewer cards, preventing a painful 50% loss if anyone rolls a 7 before your next turn.</p>
+                </div>
+
+                <div class="tactic-box">
+                    <h4>🚧 Port Blocking & Cut-offs</h4>
+                    <p>Don't just build towards high pips—build roads to physically cap off an opponent's settlement path. Snagging a 2:1 port intersection right before an opponent reaches it severely cripples their trading economy.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: DICE & CARD STATISTICS -->
+        <section id="stats" class="content-card">
+            <div class="section-header">
+                <h2>📊 Dice Probabilities & Card Distributions</h2>
+                <p>Mathematical odds to help you choose the best hex intersections.</p>
+            </div>
+
+            <div class="table-responsive">
+                <table class="catan-table">
+                    <thead>
+                        <tr>
+                            <th>Dice Roll</th>
+                            <th>Dot Pips</th>
+                            <th>Ways to Roll (out of 36)</th>
+                            <th>Probability %</th>
+                            <th>Strategic Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>2 or 12</strong></td>
+                            <td>•</td>
+                            <td>1 / 36</td>
+                            <td>2.78%</td>
+                            <td><span class="badge-low">Minimal</span> - Lowest Probability</td>
+                        </tr>
+                        <tr>
+                            <td><strong>3 or 11</strong></td>
+                            <td>••</td>
+                            <td>2 / 36</td>
+                            <td>5.56%</td>
+                            <td><span class="badge-low">Low</span> - Decent 2nd Settlement Placement</td>
+                        </tr>
+                        <tr>
+                            <td><strong>4 or 10</strong></td>
+                            <td>•••</td>
+                            <td>3 / 36</td>
+                            <td>8.33%</td>
+                            <td><span class="badge-mid">Medium</span> - Good Supporting Resource Value</td>
+                        </tr>
+                        <tr>
+                            <td><strong>5 or 9</strong></td>
+                            <td>••••</td>
+                            <td>4 / 36</td>
+                            <td>11.11%</td>
+                            <td><span class="badge-high">High</span> - Excellent Primary Targets</td>
+                        </tr>
+                        <tr>
+                            <td><strong>6 or 8</strong></td>
+                            <td>•••••</td>
+                            <td>5 / 36</td>
+                            <td>13.89%</td>
+                            <td><span class="badge-prime">Maximum</span> - Best Resource Production</td>
+                        </tr>
+                        <tr class="highlight-row">
+                            <td><strong>7</strong></td>
+                            <td>N/A</td>
+                            <td>6 / 36</td>
+                            <td>16.67%</td>
+                            <td><span class="badge-robber">Robber</span> - Average once every 6 rolls!</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- CARD DECK DISTRIBUTION -->
+            <div class="deck-info">
+                <h3>Development Card Deck Composition (25 Cards Total)</h3>
+                <div class="deck-grid">
+                    <div class="deck-card">
+                        <span class="deck-num">14</span>
+                        <span class="deck-label">Knights (56%)</span>
+                    </div>
+                    <div class="deck-card">
+                        <span class="deck-num">5</span>
+                        <span class="deck-label">Victory Points (20%)</span>
+                    </div>
+                    <div class="deck-card">
+                        <span class="deck-num">2</span>
+                        <span class="deck-label">Road Building (8%)</span>
+                    </div>
+                    <div class="deck-card">
+                        <span class="deck-num">2</span>
+                        <span class="deck-label">Year of Plenty (8%)</span>
+                    </div>
+                    <div class="deck-card">
+                        <span class="deck-num">2</span>
+                        <span class="deck-label">Monopoly (8%)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 6: EMBEDDED VIDEO TUTORIAL -->
+        <section id="tutorial" class="content-card">
+            <div class="section-header">
+                <h2>📺 Complete Video Walkthrough</h2>
+                <p>Watch a visual step-by-step breakdown of how Catan is played.</p>
+            </div>
+
+            <div class="video-container">
+                <!-- EXACT EMBED CODE REQUESTED BY USER -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6OF32Eq5DZo?si=TMm02T-HT7lYzp4G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- SECTION 7: EXTERNAL HYPERLINKS & RESOURCES -->
+        <section id="resources" class="content-card">
+            <div class="section-header">
+                <h2>🌐 Catan Resources & Online Play</h2>
+                <p>Expand your gameplay, practice online against bots, or join competitive leagues.</p>
+            </div>
+
+            <div class="resource-links">
+                <a href="https://www.catan.com/" target="_blank" rel="noopener" class="resource-item">
+                    <div class="res-icon">🏆</div>
+                    <div>
+                        <h4>Official Catan Website</h4>
+                        <p>Official rules, expansion guides, FAQ, and tournament news.</p>
+                    </div>
+                </a>
+
+                <a href="https://colonist.io/" target="_blank" rel="noopener" class="resource-item">
+                    <div class="res-icon">🎮</div>
+                    <div>
+                        <h4>Colonist.io (Free Online Catan)</h4>
+                        <p>Play web-based multiplayer Catan instantly in your browser.</p>
+                    </div>
+                </a>
+
+                <a href="https://boardgamegeek.com/boardgame/13/catan" target="_blank" rel="noopener" class="resource-item">
+                    <div class="res-icon">🎲</div>
+                    <div>
+                        <h4>BoardGameGeek Catan Hub</h4>
+                        <p>Community ratings, forum strategies, variants, and expansion reviews.</p>
+                    </div>
+                </a>
+
+                <a href="https://catanuniverse.com/" target="_blank" rel="noopener" class="resource-item">
+                    <div class="res-icon">📱</div>
+                    <div>
+                        <h4>Catan Universe App</h4>
+                        <p>Official cross-platform video game on Steam, iOS, and Android.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <span class="hex-logo"></span> THE CATAN WIZARD
+            </div>
+            <p>Designed for board game lovers. Catan is a registered trademark of Catan GmbH. Fan-made reference site.</p>
+            <ul class="footer-nav">
+                <li><a href="#setup">Setup</a></li>
+                <li><a href="#rules">Rules</a></li>
+                <li><a href="#pro-tactics">Tactics</a></li>
+                <li><a href="#stats">Dice Odds</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
